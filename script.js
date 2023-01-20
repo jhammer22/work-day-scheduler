@@ -14,11 +14,14 @@ $('#currentDay').text(today.format('MMM D, YYYY'));
   // current hour in 24-hour time?
 
 
-$(".saveBtn").on("click" function (){
+$(".saveBtn").on("click", function (){
   var textInput = $(this).siblings("textarea").val();
   var timePlanner = $(this).parent().attr("id");
   localStorage.setItem(timePlanner, textInput);
 })
+
+console.log("timePlanner")
+console.log("textInput")
 
 $("#hour-9").children("textarea").val(localStorage.getItem("#hour-9"));
 $("#hour-10").children("textarea").val(localStorage.getItem("#hour-10"));
@@ -29,6 +32,7 @@ $("#hour-2").children("textarea").val(localStorage.getItem("#hour-2"));
 $("#hour-3").children("textarea").val(localStorage.getItem("#hour-3"));
 $("#hour-4").children("textarea").val(localStorage.getItem("#hour-4"));
 $("#hour-5").children("textarea").val(localStorage.getItem("#hour-5"));
+
 
 
 

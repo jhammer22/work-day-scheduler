@@ -1,6 +1,6 @@
 
 var today = dayjs();
-$('#currentDay').text(today.format('MMM D, YYYY'));
+$('#currentDay').text(today.format('MMM D, YYYY h:mm A'));
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
@@ -12,6 +12,10 @@ $('#currentDay').text(today.format('MMM D, YYYY'));
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
+
+  //if time block is equal to current time append class red
+  // else if time block less than current time append class grey
+  // else append class green
 
 
 $(".saveBtn").on("click", function (){

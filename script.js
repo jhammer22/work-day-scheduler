@@ -23,23 +23,25 @@ for (var i = 0; i < colorElements.length; i++) {
   console.log(timeBlockHour)
   console.log(currentTimeBlockHour)
 } 
-// split method removed first part of id and only returns number as an array of string's, parseInt takes array of string's and makes them an array of integers in a new variable. Once currentTimeBlockHour was console.log found two digit integers logging last digit 10=0 11=1 etc while now is console logging 1=13 2=14 etc. When anything other than position 1 is passed into parseInt returns NaN in console, if 00 is added to id in html logged integer does not change.
+// split method removed first part of id and only returns number as an array of string's, parseInt takes array of string's and makes them an array of integers in a new variable. Once currentTimeBlockHour was console.log found two digit integers logging last digit 10=0 11=1 etc while now is console logging 1=13 2=14 etc. When anything other than position 1 is passed into parseInt returns NaN in console, if 00 is added to id in html logged integer does not change. 
 
-// let past = 
-// let present = 
-// let future = 
+  // could possibly compare now integer to timeBlock string to set boolean 
+
+// let past = document.getElementById("col-8 col-md-10 description").style.backgroundColor=#d3d3d3;
+// let present = document.getElementById("col-8 col-md-10 description").style.backgroundColor=#ff6961
+// let future = document.getElementById("col-8 col-md-10 description").style.backgroundColor=#77dd77
 // 
 // text area class= "col-8 col-md-10 description" need to create past, present and future class's
 // currentTimeBlockHour is text area used to compare to now and set true false
 // compare now integer and currentTimeBlockHour integer to get boolean 
+
+// use boolean to set present and past in if statement with else to set background
+  // if now === currentTimeBlockHour set background-color: #ff6961 maybe a way to do this with arrow function (present)
+  // if now != currentTimeBlockHour set background-color: #d3d3d3 (past)
+  // else set background-color: #77dd77 (future)
   
 
-  // use boolean to set present and past in if statement with else to set background
 
-// set past present future to change background color
-  // if true set present set background-color: #ff6961
-  // if !true set past set background-color: #d3d3d3     if else set past
-  // else set future set background-color: #77dd77
  
   
 

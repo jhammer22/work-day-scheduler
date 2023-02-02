@@ -25,10 +25,24 @@ for (var i = 0; i < colorElements.length; i++) {
 } 
 // split method removed first part of id and only returns number as an array of string's, parseInt takes array of string's and makes them an array of integers in a new variable. Once currentTimeBlockHour was console.log found two digit integers logging last digit 10=0 11=1 etc while now is console logging 1=13 2=14 etc. When anything other than position 1 is passed into parseInt returns NaN in console, if 00 is added to id in html logged integer does not change.
 
-// text area class= "col-8 col-md-10 description" need to create past, current and future class's
-
-// compare now integer and currentTimeBlockHour integer and set current, past and future class 
+// let past = 
+// let present = 
+// let future = 
+// 
+// text area class= "col-8 col-md-10 description" need to create past, present and future class's
+// currentTimeBlockHour is text area used to compare to now and set true false
+// compare now integer and currentTimeBlockHour integer to get boolean 
   
+
+  // use boolean to set present and past in if statement with else to set background
+
+// set past present future to change background color
+  // if true set present set background-color: #ff6961
+  // if !true set past set background-color: #d3d3d3     if else set past
+  // else set future set background-color: #77dd77
+ 
+  
+
 
 
 
@@ -45,6 +59,7 @@ $(".saveBtn").on("click", function (){
   var timePlanner = $(this).parent().attr("id");
   localStorage.setItem(timePlanner, textInput);
 })
+// display saved input to text area from locale storage
 
 console.log("timePlanner");
 console.log("textInput");
@@ -61,19 +76,3 @@ $("#hour-5").children("textarea").val(localStorage.getItem("#hour-5"));
 
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that the code isn't run until the browser has finished rendering all the elements in the html.
-
-
-  
- 
-
-  
-
-
-
-  
-  // colorElement.classList.toggle("red", "green", "nuetral")
-    //if time block is equal to current time append class red
-      // else if time block less than current time append class grey
-      // else append class green
-// }
-  

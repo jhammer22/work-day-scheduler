@@ -11,19 +11,23 @@ $('#currentDay').text(dayjs().format('MMM D, YYYY h:mm A'));
 
 var now = parseInt(dayjs().format("H"))
   console.log(now); 
-  //  parse int turns sting to integer 
+  //  now gets current time parse int turns dayjs sting to integer .format gets time in 24hr time 
 
 var colorElements = document.querySelectorAll(".time-block")
-  
+  //  querySelectorAll calls all id's with time-block and pass's them into var colorElements
+
 for (var i = 0; i < colorElements.length; i++) {
   var timeBlockHour = colorElements[i].id
   timeBlockHour = timeBlockHour.split("-")[1]
   var currentTimeBlockHour = parseInt(timeBlockHour.split("")[1])
   console.log(timeBlockHour)
   console.log(currentTimeBlockHour)
-}
-  
-// split method removed first part of id and only returns number as a string still need to parseInt and compare to now.js then add color class's
+} 
+// split method removed first part of id and only returns number as an array of string's, parseInt takes array of string's and makes them an array of integers in a new variable. Once currentTimeBlockHour was console.log found two digit integers logging last digit 10=0 11=1 etc while now is console logging 1=13 2=14 etc. When anything other than position 1 is passed into parseInt returns NaN in console, if 00 is added to id in html logged integer does not change.
+
+// text area class= "col-8 col-md-10 description" need to create past, current and future class's
+
+// compare now integer and currentTimeBlockHour integer and set current, past and future class 
   
 
 
@@ -73,5 +77,3 @@ $("#hour-5").children("textarea").val(localStorage.getItem("#hour-5"));
       // else append class green
 // }
   
-// parse var now into function // call dayjs() with one of the supported input types 
-    // validation returns a boolean indicating whether the dayjs date is valid

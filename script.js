@@ -18,7 +18,9 @@ var colorElements = document.querySelectorAll(".time-block")
 for (var i = 0; i < colorElements.length; i++) {
   var timeBlockHour = colorElements[i].id
   timeBlockHour = timeBlockHour.split("-")[1]
+  var currentTimeBlockHour = parseInt(timeBlockHour.split("")[1])
   console.log(timeBlockHour)
+  console.log(currentTimeBlockHour)
 }
   
 // split method removed first part of id and only returns number as a string still need to parseInt and compare to now.js then add color class's

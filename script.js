@@ -15,21 +15,18 @@ for (var i = 0; i < colorElements.length; i++) {
   console.log(currentTimeBlockHour)
   
 };  
-// compare now integer and currentTimeBlockHour integer to get boolean 
-
-// use boolean to set present and past in if statement with else to set background
+// 9am text area only now turning green(else statement) if > is used in else if color does not show
   
 if (now === currentTimeBlockHour){
   document.getElementById("text").style.backgroundColor= "ff6961"; 
-} else{
+} else if (now == !currentTimeBlockHour) {
+  document.getElementById("text").style.backgroundColor= "d3d3d3"
+} else {
   document.getElementById("text").style.backgroundColor = "#77dd77" 
 };
 
-if (now != currentTimeBlockHour) {
-  document.getElementById("text").style.backgroundColor= "#d3d3d3";
-} else {
-  document.getElementById("text").style.backgroundColor = "#77dd77"
-};
+
+
   
 
 

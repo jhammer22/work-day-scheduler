@@ -17,7 +17,7 @@ for (var i = 0; i < colorElements.length; i++) {
 };  
 // 9am text area only now turning green(else statement) if > is used in else if color does not show
   
-if (now === currentTimeBlockHour){
+if (now == currentTimeBlockHour){
   document.getElementById("text").style.backgroundColor= "ff6961"; 
 } else if (now == !currentTimeBlockHour) {
   document.getElementById("text").style.backgroundColor= "d3d3d3"

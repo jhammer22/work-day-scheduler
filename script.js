@@ -12,12 +12,11 @@ for (var i = 0; i < colorElements.length; i++) {
   timeBlockHour = timeBlockHour.split("-")[1]
   var currentTimeBlockHour = parseInt(timeBlockHour.split("")[1])
   console.log(timeBlockHour)
-  console.log(currentTimeBlockHour)
-  
+  console.log(currentTimeBlockHour)  
 };  
 // 9am text area only now turning green(else statement) if > is used in else if color does not show
   
-if (now == currentTimeBlockHour){
+if (now == currentTimeBlockHour) {
   document.getElementById("text").style.backgroundColor= "ff6961"; 
 } else if (now == !currentTimeBlockHour) {
   document.getElementById("text").style.backgroundColor= "d3d3d3"
@@ -25,28 +24,7 @@ if (now == currentTimeBlockHour){
   document.getElementById("text").style.backgroundColor = "#77dd77" 
 };
 
-
-
-  
-
-
- 
-
-
-
-
-
- 
-  
-
-
-
-
-
-
-
-
-
+// research comparing parsed integer variables using logical comparison
 
 
 

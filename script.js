@@ -14,48 +14,15 @@ colorElements.each(function(i){
   console.log(timeBlockHour)
   console.log(currentTimeBlockHour)
   console.log($(this).children("textarea"))
-  now = 11
+  now = now
   if (now == timeBlockHour) {
-    // $(this).children("textarea").css("background-color", "ff6961")
     $(this).addClass("present")
   } else if (now > timeBlockHour) {
-    // $(this).children("textarea").css("background-color", "d3d3d3")
     $(this).addClass("past")
-  } else  {
-    // $(this).children("textarea").css("background-color", "#77dd77")  
+  } else  { 
     $(this).addClass("future")
   }; 
 })
-
-// for (var i = 0; i < colorElements.length; i++) {
-//   var timeBlockHour = colorElements[i].id
-   
-//   if (now == timeBlockHour) {
-//     colorElements[i].style.backgroundColor= "ff6961"; 
-//   } else if (now > timeBlockHour) {
-//     document.getElementById("text").style.backgroundColor= "d3d3d3"
-//   } else  {
-//     document.getElementById("text").style.backgroundColor = "#77dd77" 
-//   }; 
-// };  
-// 9am text area only now turning green(else statement) if > is used in else if color does not show
-  // change to for loop??
-
-
-// research comparing parsed integer variables using logical comparison
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 $(".saveBtn").on("click", function (){
   var textInput = $(this).siblings("textarea").val();

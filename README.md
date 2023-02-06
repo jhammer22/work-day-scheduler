@@ -24,7 +24,7 @@ This page was created as an exercise for UT MERN stack Bootcamp, working with HT
 ---
 
 ## Usage
-
+![this is an image](./assets/images/Screenshot%202023-02-06%20at%2012.52.07%20PM.png)
 ## Credits
 Thank you too:
 Magdalene Zernick for help on the save button function [**GitHub**(https://github.com/MZernick)]

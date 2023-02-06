@@ -26,6 +26,9 @@ This page was created as an exercise for UT MERN stack Bootcamp, working with HT
 ## Usage
 
 ## Credits
-
+Thank you too:
+Magdalene Zernick for help on the save button function **GitHub** https://github.com/MZernick
+My amazing tutor and mentor Julio Valdez **LinkedIn** https://www.linkedin.com/in/teamjuli0/
 ## License
 
+**MIT** 
